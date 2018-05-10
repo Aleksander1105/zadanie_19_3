@@ -1,8 +1,5 @@
-import {ADD_COMMENT} from './actions'
-import {EDIT_COMMENT} from './actions'
-import {REMOVE_COMMENT} from './actions'
-import {THUMB_UP_COMMENT} from './actions'
-import {THUMB_DOWN_COMMENT} from './actions'
+
+import {ADD_COMMENT, EDIT_COMMENT, REMOVE_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN_COMMENT} from './actions';
 
 const initialState = {
 	comments: [],
@@ -10,7 +7,7 @@ const initialState = {
 };
 
 function reducer(state = [], action) {
-	switch(action.type) {
+	switch (action.type) {
 		case ADD_COMMENT: 
 			return Object.assign({}, state, {
 				comments: [
@@ -41,3 +38,5 @@ function reducer(state = [], action) {
 			return: state;
 	}
 }
+
+export default comments;
